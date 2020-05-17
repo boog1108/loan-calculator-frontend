@@ -25,7 +25,7 @@
         created() {
             bus.$on('calculate', (lq, mess) => {
                 if (lq != null) {
-                    this.rate = lq.rate;
+                    this.rate = lq.rate + "%";
                     this.monthlyRepayment = lq.monthlyRepayment;
                     this.totalRepayment = lq.totalRepayment;
                 } else {
